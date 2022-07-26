@@ -1,5 +1,8 @@
 <?php
 
+    include("../conexion.php");
+    $link = conectar();
+
     $id=$_REQUEST['id'];
     $nom=$_REQUEST['nom'];
     $ape=$_REQUEST['ape'];
@@ -14,7 +17,9 @@
 
     $sql = "INSERT INTO socios values('$id','$nom','$ape','$tel','$em',1)";
     $sql1= "INSERT INTO usuarios values('$id','$us','$pas', $r,'$res',1,$pre)";
-    $res = mysqli_query(Conectar::con(), $sql) or die("Error en la consulta $sql");
-    $res1= mysqli_query(Conectar::con(), $sql1) or die("Error en la consulta $sql");
+    $res = mysqli_query($link, $sql) or die("Error en la consulta $sql");
+    $res1= mysqli_query($link, $sql1) or die("Error en la consulta $sql");
 
+
+    mysqli_close($link);
 ?>
