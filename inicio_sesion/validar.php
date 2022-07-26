@@ -1,5 +1,5 @@
 <?php
-    include("../conexion.php");
+    include("./conexion.php");
 
     $link = conectar();
     $user=$_REQUEST['user'];
@@ -17,6 +17,5 @@
     if($row = mysqli_fetch_array($result)){
         echo json_encode($row, JSON_UNESCAPED_UNICODE);
     }
-
     mysqli_close($link);
 ?>
