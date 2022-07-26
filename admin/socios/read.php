@@ -20,7 +20,7 @@
         $index['id_estado_socio']=$row['id_estado_socio'];
         array_push($res_socios['Datos'], $index);
     }
-    echo json_encode($res_socios);
+    //echo json_encode($res_socios);
 
 
     mysqli_close($link);
