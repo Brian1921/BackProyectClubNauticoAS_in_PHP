@@ -8,7 +8,6 @@
     $tel=$_REQUEST['tel'];
     $em=$_REQUEST['em'];
 
-
     $sql = "UPDATE socios SET nom_socio ='$nom', ape_socio='$ape', tel_socio='$tel', em_socio='$em' WHERE id_socio = $id";
     $res = mysqli_query($link, $sql) or die("Error en la consulta $sql");
 

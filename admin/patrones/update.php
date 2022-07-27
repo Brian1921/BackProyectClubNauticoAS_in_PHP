@@ -17,6 +17,7 @@
         echo "error en actualizar";
     }
 
+    
     mysqli_close($link);
 
 ?>
