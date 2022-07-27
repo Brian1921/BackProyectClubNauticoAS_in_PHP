@@ -17,7 +17,7 @@
         $index['id_estado_patron']=$row['id_estado_patron'];
         array_push($res_patrones['Datos'], $index);
     }
-    //echo json_encode($res_patrones);
+    echo json_encode($res_patrones);
 
     mysqli_close($link);
 ?>
