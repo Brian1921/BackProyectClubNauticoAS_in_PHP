@@ -8,11 +8,11 @@
     $ape=$_REQUEST['ape'];
     $tel=$_REQUEST['tel'];
     $em=$_REQUEST['em'];
-    $pre=$_REQUEST['pre'];
+    $pre=1;
     $res=$_REQUEST['res'];
     $us=$_REQUEST['us'];
     $pas=$_REQUEST['pas'];
-    $r=$_REQUEST['r'];
+    $r=2;
 
 
     $sql = "INSERT INTO socios values('$id','$nom','$ape','$tel','$em',1)";
