@@ -4,9 +4,8 @@
 
     $id_u=$_REQUEST['id'];
     $usuario=$_REQUEST['usuario'];
-    $id_rol=$_REQUEST['id_rol'];
 
-    $sql="UPDATE usuarios SET usuario='$usuario', id_rol='$id_rol' WHERE id_u='$id_u'";
+    $sql="UPDATE usuarios SET usuario='$usuario' WHERE id_u='$id_u'";
     $res= mysqli_query($link, $sql);
 
     if($res){
