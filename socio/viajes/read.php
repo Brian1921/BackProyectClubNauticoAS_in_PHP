@@ -23,7 +23,6 @@
         $index['destino']=$row['destino'];
         $index['nom_barco']=$row['nom_barco'];
         $index['nom_patron']=$row['nom_patron'];
-        $index['id_estado_viaje']=$row['id_estado_viaje'];
         array_push($res_viajes['Datos'], $index);
     }
     echo json_encode($res_viajes);

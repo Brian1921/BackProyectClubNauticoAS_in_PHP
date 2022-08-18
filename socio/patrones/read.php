@@ -5,7 +5,7 @@
     $res_patrones=[];
     $res_patrones['Datos']=array();
 
-    $id_socio=$_REQUEST['id'];
+    $id_socio="1234";
 
     $sql = "SELECT DISTINCT p.id_patron, p.nom_patron, p.ape_patron, p.tel_patron, p.em_patron FROM patrones AS p
             INNER JOIN socios AS s ON s.id_socio='$id_socio'
