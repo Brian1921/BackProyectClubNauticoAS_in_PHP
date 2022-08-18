@@ -8,7 +8,7 @@
     $res_barcos=[];
     $res_barcos['Datos']=array();
 
-    $sql = "SELECT DISTINCT * FROM barco WHERE id_socio ='$id' AND id_estado_barco = 1;";
+    $sql = "SELECT DISTINCT * FROM barco WHERE id_socio ='$id' AND id_estado_barco = 1";
     $res = mysqli_query($link, $sql);
 
     while($row = mysqli_fetch_array($res)){

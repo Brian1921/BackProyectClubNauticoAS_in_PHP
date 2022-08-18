@@ -5,7 +5,7 @@
 
     $id_barco=$_REQUEST['id'];
     $nom_barco=$_REQUEST['nom'];
-    $id_socio=$_REQUEST['id_so'];
+    $id_socio="1234";
     $id_amarre=$_REQUEST['id_ama'];
 
 
